@@ -1,0 +1,166 @@
+/* reset */
+body, h1, input, textarea, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 기본 바디 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4a90e2;
+}
+
+/* 입력 랩 스타일 */
+.input-wrap {
+    width: 90%; /* 테이블과 동일한 너비 */
+    max-width: 1000px; /* 테이블과 동일한 최대 너비 */
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrap input, .input-wrap textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input-wrap input:focus, .input-wrap textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#userID {
+    font-size: 12px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+#btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:disabled {
+    background-color: #b5d3f1;
+    cursor: not-allowed;
+}
+
+#btn:hover:not(:disabled) {
+    background-color: #357ab7;
+}
+
+/* 테이블 스타일 */
+.main-wrap {
+    width: 90%; /* 입력 섹션과 동일한 너비 */
+    max-width: 1000px; /* 입력 섹션과 동일한 최대 너비 */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+thead {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* 버튼 */
+.modifybtn, .delectbtn {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modifybtn {
+    background-color: rgb(88, 85, 85);
+}
+
+.modifybtn:hover {
+    background-color: rgb(60, 58, 58);
+}
+
+.delectbtn {
+    background-color: #e74c3c;
+}
+
+.delectbtn:hover {
+    background-color: #c0392b;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .input-wrap, .main-wrap {
+        width: 95%;
+        padding: 15px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
