@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.topBox {
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cartTable th, .cartTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cartTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cartTable img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* 개별 삭제 버튼 */
+.delectbtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delectbtn:hover {
+    background-color: #c0392b;
+}
+
+
+/* 전체 삭제 버튼 */
+.buttonWrap {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deleteAll {
+    background-color: rgb(226, 223, 223);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteAll:hover {
+    background-color: rgb(164, 163, 163);
+}
+
+/* 비어있을 경우 */
+.emptyMain {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #aaa;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    .cartTable th, .cartTable td {
+        padding: 5px;
+    }
+
+    .cartTable img {
+        width: 80px;
+        height: 80px;
+    }
+}

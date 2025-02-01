@@ -7,13 +7,12 @@ body {
 }
 
 .topBox {
-    background-color: pink;
+    background-color: #333333;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .bodyWrap {
@@ -60,16 +59,23 @@ body {
     font-weight: bold;
 }
 
-.bagBtn {
+.buttonWrap{
     position: absolute;
+    bottom: 15px;
+    right: 20px;
+    height: 45px;
+}
+
+.bagBtn {
+    background-color: rgb(226, 223, 223);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
-    height: 35px;
     cursor: pointer;
+    width: 110px;
     font-weight: bold;
 }
 

@@ -4,7 +4,7 @@ html, body {
 
 /* 고정 헤더 */
 .topBox {
-    background-color: pink;
+    background-color: #333333;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,12 +70,12 @@ path {
     fill: red;
 }
 
-/* 텅 비었을때 나타날 화면 배치 */
+/* 텅 비었을때 */
 .emptyMain {
-    font-size: 20px;
-    color: #666;
     text-align: center;
     padding: 50px;
+    font-size: 18px;
+    color: #aaa;
 }
 
 /* 반응형 */

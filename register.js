@@ -58,7 +58,7 @@ const dataSetting = () => {
         <tr>
             <td><img src="${item.productImg}" alt="상품 이미지" style="width: 100px; height: 100px;"></td>
             <td><div class="name">${item.name}</div><span class="span${item.id}"></span></td>
-            <td><div class="price">${item.price}</div><span class="span${item.id}"></span></td>
+            <td><div class="price">${item.price}원</div><span class="span${item.id}"></span></td>
             <td><div class="productEx">${item.productEx}</div><span class="span${item.id}"></span></td>
             <td>
                 <button class="modifybtn" index="${index}">수정</button>
