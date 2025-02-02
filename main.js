@@ -2,6 +2,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const data_map = JSON.parse(localStorage.getItem('data_map')) || [];
 
     const bodyWrap = document.querySelector('.bodyWrap');
+    const bagIcon = document.querySelector('.bagIcon');
+
+    // 장바구니 페이지 이동
+    bagIcon.addEventListener('click', ()=>{
+        window.location.href = 'bag.html';
+    });
+    
+    // 장바구니 카운트 함수
+    function updateBag(){
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartCount = cart.length;
+
+        // 기존 카운트 요소 삭제
+        let existingCount = document.querySelector('.cart-count');
+        if (existingCount) {
+            existingCount.remove();
+        }
+
+        // 장바구니에 상품이 있으면 숫자 표시
+        if(cartCount > 0) {
+            let countBadge = document.createElement('span');
+            countBadge.classList.add('cart-count');
+            countBadge.innerText = cartCount;
+            bagIcon.parentNode.appendChild(countBadge);
+        }
+    }
+
+    updateBag();
+
+    // 이벤트 리스너로 개수 업데이트
+    window.addEventListener('updateBag', updateBag);
 
     if (data_map.length > 0) {
         bodyWrap.innerHTML = data_map

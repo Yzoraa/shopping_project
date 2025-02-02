@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);  // 쿼리스트링을 파싱
+    const params = new URLSearchParams(window.location.search);
     const productId = params.get('productId');
 
     const data_map = JSON.parse(localStorage.getItem('data_map')) || [];
@@ -23,13 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img class="bagIcon" src="./img/bagicon.png" width="20px" height="20px"> 장바구니
                         </button>
                     </div>
-                    
                 </div>
             </div>
         `;
 
         // 장바구니 버튼 클릭 이벤트
-        document.querySelector('.bagBtn').addEventListener('click',() =>{
+        document.querySelector('.bagBtn').addEventListener('click', () => {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
             // 중복 방지
@@ -42,8 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 alert('이미 장바구니에 있는 상품입니다.');
             }
-        });
 
+            // 장바구니 개수 업데이트 이벤트 발생
+            window.dispatchEvent(new Event('updateBag'));
+        });
     } else {
         bodyWrap.innerHTML = `<div class="emptyMain">선택한 상품이 없습니다.</div>`;
     }
