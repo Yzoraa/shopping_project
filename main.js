@@ -3,29 +3,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const bodyWrap = document.querySelector('.bodyWrap');
     const bagIcon = document.querySelector('.bagIcon');
+    
+    const userIcon = document.querySelector('.userIcon');
 
-    // 장바구니 페이지 이동
+    // 장바구니 아이콘 클릭 시 페이지 이동
     bagIcon.addEventListener('click', ()=>{
         window.location.href = 'bag.html';
     });
+
+    // 유저 아이콘 클릭 시 메시지 출력
+    userIcon.addEventListener('click', ()=>{
+        alert('준비중입니다.')
+    });
     
     // 장바구니 카운트 함수
-    function updateBag(){
+    function updateBag() {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         const cartCount = cart.length;
 
-        // 기존 카운트 요소 삭제
-        let existingCount = document.querySelector('.cart-count');
+        // .bagIcon의 부모 요소 (cart-container 확인)
+        let bagIcon = document.querySelector('.bagIcon');
+        let cartContainer = bagIcon.parentElement;
+
+        // cart-container가 없으면 새로 생성
+        if (!cartContainer.classList.contains('cart-container')) {
+            cartContainer = document.createElement('div');
+            cartContainer.classList.add('cart-container');
+
+            // 기존 .bagIcon의 부모 요소에 cartContainer 추가
+            bagIcon.parentNode.replaceChild(cartContainer, bagIcon);
+            cartContainer.appendChild(bagIcon);
+        }
+
+        // 기존 cart-count 삭제
+        let existingCount = cartContainer.querySelector('.cart-count');
         if (existingCount) {
             existingCount.remove();
         }
 
-        // 장바구니에 상품이 있으면 숫자 표시
-        if(cartCount > 0) {
+        // 장바구니에 상품이 있으면 숫자 추가
+        if (cartCount > 0) {
             let countBadge = document.createElement('span');
             countBadge.classList.add('cart-count');
             countBadge.innerText = cartCount;
-            bagIcon.parentNode.appendChild(countBadge);
+            cartContainer.appendChild(countBadge);
         }
     }
 

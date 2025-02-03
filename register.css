@@ -14,19 +14,51 @@ body {
     padding: 20px;
 }
 
+/* 로고 */
+.topBox{
+    background-color: #f9f9f9;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 1000;
+    border-bottom: 3px solid black; /* 밑부분 검정색 선 추가 */
+}
+
+.topBox .logoIcon {
+    width: 60px;
+    height: auto;
+}
+
+.topBox h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* 제목 스타일 */
 h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-    color: #4a90e2;
+    color: black;
 }
 
 /* 입력 랩 스타일 */
 .input-wrap {
-    width: 90%; /* 테이블과 동일한 너비 */
-    max-width: 1000px; /* 테이블과 동일한 최대 너비 */
-    margin: 0 auto 40px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto 40px; /* topBox 높이 고려하여 여백 추가 */
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -44,7 +76,7 @@ h1 {
 }
 
 .input-wrap input:focus, .input-wrap textarea:focus {
-    border-color: #4a90e2;
+    border-color: #6b6969;
     outline: none;
 }
 
@@ -66,7 +98,7 @@ textarea {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: #4a90e2;
+    background-color: #6b6969;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -74,18 +106,18 @@ textarea {
 }
 
 #btn:disabled {
-    background-color: #b5d3f1;
+    background-color: #cac8c8;
     cursor: not-allowed;
 }
 
 #btn:hover:not(:disabled) {
-    background-color: #357ab7;
+    background-color: #4f4d4d;
 }
 
 /* 테이블 스타일 */
 .main-wrap {
-    width: 90%; /* 입력 섹션과 동일한 너비 */
-    max-width: 1000px; /* 입력 섹션과 동일한 최대 너비 */
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
@@ -101,7 +133,7 @@ table {
 }
 
 thead {
-    background-color: #4a90e2;
+    background-color: #939090;
     color: #fff;
 }
 
