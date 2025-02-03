@@ -98,7 +98,7 @@ textarea {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: #6b6969;
+    background-color: rgb(39, 39, 124);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -106,12 +106,12 @@ textarea {
 }
 
 #btn:disabled {
-    background-color: #cac8c8;
+    background-color: rgb(90, 90, 116);
     cursor: not-allowed;
 }
 
 #btn:hover:not(:disabled) {
-    background-color: #4f4d4d;
+    background-color: rgb(5, 5, 79);
 }
 
 /* 테이블 스타일 */
@@ -133,7 +133,7 @@ table {
 }
 
 thead {
-    background-color: #939090;
+    background-color: #6b6969;
     color: #fff;
 }
 
@@ -195,4 +195,65 @@ img {
         width: 70px;
         height: 70px;
     }
+}
+
+/* 푸터 */
+.bottom {
+    border-top: 2px solid #6b6969;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.bottomLeft {
+    /* background-color: #eaeaea; */
+    padding: 20px;
+    border-radius: 3px;
+}
+.bottomLeft span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 30px;
+}
+.bottomLeft p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.bottomRight {
+    text-align: center;
+    padding-right: 30px;
+}
+.bottomRight span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+.bottomRight p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.buttonBox {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.buttonBox button {
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* buttonBox와 첫 번째 p 태그 사이 간격 */
+.bottomRight .buttonBox {
+    margin-bottom: 25px; 
 }

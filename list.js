@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         bodyWrap.innerHTML = `
             <div class="productDetail">
                 <div class="productImg">
-                    <img src="${selectedProduct.productImg}" alt="상품 이미지">
+                    <img class="productImage" src="${selectedProduct.productImg}" alt="상품 이미지">
+                    <div class="hoverText">이미지 크게 보기</div>
                 </div>
                 <div class="productInfo">
                     <h2>${selectedProduct.name}</h2>
@@ -25,10 +26,46 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </div>
+
+            <!-- 모달창 -->
+            <div class="modal hidden">
+                <div class="modal-content">
+                    <img class="modalImage" src="${selectedProduct.productImg}" alt="확대 이미지">
+                </div>
+            </div>
         `;
 
+        const productImage = document.querySelector('.productImage');
+        const hoverText = document.querySelector('.hoverText');
+        const modal = document.querySelector('.modal');
+        const modalContent = document.querySelector('.modal-content');
+        const bagBtn = document.querySelector('.bagBtn');
+
+        // 이미지 호버 효과
+        productImage.addEventListener('mouseover', () => {
+            hoverText.style.opacity = '1';
+            productImage.style.opacity = '0.7';
+        });
+
+        productImage.addEventListener('mouseout', () => {
+            hoverText.style.opacity = '0';
+            productImage.style.opacity = '1';
+        });
+
+        // 모달창 열기
+        productImage.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        // 모달창 닫기 (바깥 부분 클릭 시)
+        modal.addEventListener('click', (event) => {
+            if (!modalContent.contains(event.target)) {
+                modal.classList.add('hidden');
+            }
+        });
+
         // 장바구니 버튼 클릭 이벤트
-        document.querySelector('.bagBtn').addEventListener('click', () => {
+        bagBtn.addEventListener('click', () => {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
             // 중복 방지
@@ -45,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 장바구니 개수 업데이트 이벤트 발생
             window.dispatchEvent(new Event('updateBag'));
         });
+
     } else {
         bodyWrap.innerHTML = `<div class="emptyMain">선택한 상품이 없습니다.</div>`;
     }

@@ -81,10 +81,13 @@ const dataSetting = () => {
 // 버튼 활성화 함수
 const btnAble = () => {
     const changeID = $("#id").val();
+    const nameValue = document.getElementById('name').value;
+    const priceValue = document.getElementById('price').value;
+    const productExValue = document.getElementById('productEx').value;
 
     let isDuplicatedID = data_map.some((item) => item.id === changeID);
 
-    if(isDuplicatedID === false){
+    if(isDuplicatedID === false && changeID !== '' && nameValue !== '' && priceValue !== '' && productExValue !== ''){
         clickbutton.disabled = false;
     } else{
         clickbutton.disabled = true;
@@ -206,6 +209,8 @@ function delBtnClick(event){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // btnAble();
+
     // 새로고침 해도 테이블 데이터 값 유지
     if (data_map.length > 0) {
         dataSetting();
@@ -227,6 +232,11 @@ document.addEventListener('DOMContentLoaded', () => {
         btnAble();
     });
     
+    // 나머지 input 값 공백 확인
+    $('#name, #price, #productEx').on('propertychange change paste input', function(){
+        btnAble();
+    });
+
     // 클릭시 저장 및 출력
     clickbutton.addEventListener('click', ()=>{
         // 랜덤 이미지 선택
