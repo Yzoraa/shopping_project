@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const bagBtn = document.querySelector('.bagBtn');
 
         // 이미지 호버 효과
+        hoverText.style.opacity = '0';
+
         productImage.addEventListener('mouseover', () => {
             hoverText.style.opacity = '1';
             productImage.style.opacity = '0.7';
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.classList.remove('hidden');
         });
 
-        // 모달창 닫기 (바깥 부분 클릭 시)
+        // 모달창 닫기
         modal.addEventListener('click', (event) => {
             if (!modalContent.contains(event.target)) {
                 modal.classList.add('hidden');

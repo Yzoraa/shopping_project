@@ -98,7 +98,7 @@ textarea {
     padding: 10px;
     font-size: 16px;
     color: #fff;
-    background-color: rgb(39, 39, 124);
+    background-color: #1b2a4e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -106,12 +106,12 @@ textarea {
 }
 
 #btn:disabled {
-    background-color: rgb(90, 90, 116);
+    background-color: #4a5d7a;
     cursor: not-allowed;
 }
 
 #btn:hover:not(:disabled) {
-    background-color: rgb(5, 5, 79);
+    background-color: #0f1a33;
 }
 
 /* 테이블 스타일 */
@@ -133,7 +133,7 @@ table {
 }
 
 thead {
-    background-color: #6b6969;
+    background-color: #0f1a33;
     color: #fff;
 }
 

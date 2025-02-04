@@ -3,37 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>상품등록</title>
-    <link rel="stylesheet" href="./register.css">
-    <!-- 제이쿼리 사용 -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <title>좋아요</title>
+    <link rel="stylesheet" href="./heart.css">
 </head>
 <body>
     <div class="topBox">
         <img class="logoIcon" src="./img/logoicon.png" width="60px">
-        <h1>상품 등록</h1>
     </div>
+
+    <div class="bodyWrap"></div>
     
-    <div class="input-wrap">
-        <!-- 아이디 중복 불가 -->
-        <input id="id" placeholder="아이디를 입력해 주세요." /><br />
-        <div id="userID"></div>
-
-        <!-- 상품 중복 가능 -->
-        <input id="name" placeholder="상품을 입력해 주세요." /><br />
-
-        <!-- 가격 숫자 -->
-        <input id="price" type="number" placeholder="가격을 입력해 주세요." /><br />
-
-        <!-- 상품설명 -->
-        <textarea id="productEx"></textarea><br />
-
-        <button id="btn">저장</button><br /><br />
-    </div>
-
-    <!-- 테이블 -->
-    <div class="main-wrap"></div>
-
     <div class="bottom">
         <div class="bottomLeft">
             <span>(주) Yzoraa's ALBUM</span>
@@ -51,5 +30,5 @@
         </div>
     </div>
 </body>
-<script src="./register.js"></script>
+<script src="./heart.js"></script>
 </html>
