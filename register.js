@@ -61,8 +61,10 @@ const dataSetting = () => {
             <td><div class="price">${item.price}원</div><span class="span${item.id}"></span></td>
             <td><div class="productEx">${item.productEx}</div><span class="span${item.id}"></span></td>
             <td>
-                <button class="modifybtn" index="${index}">수정</button>
-                <button class="delectbtn" index="${index}">삭제</button>
+                <div>
+                    <button class="modifybtn" index="${index}">수정</button>
+                    <button class="delectbtn" index="${index}">삭제</button>
+                </div>
             </td>
         </tr>
         `;
@@ -108,7 +110,7 @@ function modBtnClick(event) {
     if (btn.innerText === '수정') {
         // 기존 데이터 저장
         const productExOrigin = productExTd.textContent;
-        const priceOrigin = priceTd.textContent;
+        const priceOrigin = priceTd.textContent.replace('원', '');
         const nameOrigin = nameTd.textContent;
 
         // input 태그 생성

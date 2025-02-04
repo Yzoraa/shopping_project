@@ -35,11 +35,27 @@ body {
     font-weight: bold;
 }
 
+th:nth-child(1) { /* 이미지 */
+    width: 15%;
+}
+
+th:nth-child(3) { /* 가격 */
+    width: 10%;
+}
+
+th:nth-child(5) { /* 관리 */
+    width: 8%;
+}
+
 .cartTable img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.cardImg {
+    cursor: pointer;
 }
 
 /* 개별 삭제 버튼 */
@@ -55,7 +71,6 @@ body {
 .delectbtn:hover {
     background-color: #c0392b;
 }
-
 
 /* 전체 삭제 버튼 */
 .buttonWrap {
@@ -94,6 +109,13 @@ body {
     .cartTable img {
         width: 80px;
         height: 80px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
     }
 }
 

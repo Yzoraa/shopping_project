@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="productImg">
                         <img src="${item.productImg}" alt="상품 이미지">
                     </div>
-                    <div class="productInfo">
-                        <h2>${item.name}</h2>
-                        <p>가격: ${item.price}원</p>
-                    </div>
                 </div>
             `
             )
@@ -22,4 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         bodyWrap.innerHTML = `<div class="emptyMain">좋아요 한 상품이 없습니다.</div>`;
     }
+
+    // list.html로 이동
+    const productCards = document.querySelectorAll('.productCard');
+    productCards.forEach((img) => {
+        img.addEventListener('click', () => {
+            const productId = img.getAttribute('id');
+            window.location.href = `list.html?productId=${productId}`;
+        });
+    });
 });

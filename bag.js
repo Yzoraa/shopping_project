@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     dataSetting();
+
+    // list.html로 이동
+    const productCards = document.querySelectorAll('.cardImg');
+    productCards.forEach((img) => {
+        img.addEventListener('click', () => {
+            const productId = img.getAttribute('id');
+            window.location.href = `list.html?productId=${productId}`;
+        });
+    });
 });
 
 // 테이블에 데이터 넣는 함수
@@ -37,7 +46,7 @@ const dataSetting = () => {
     .map(
         (item) => `
         <tr>
-            <td><img src="${item.productImg}" alt="상품 이미지" style="width: 100px; height: 100px;"></td>
+            <td><img src="${item.productImg}" class="cardImg" id="${item.id}"alt="상품" style="width: 100px; height: 100px;"></td>
             <td class="name">${item.name}</td>
             <td>${item.price}원</td>
             <td>${item.productEx}</td>
