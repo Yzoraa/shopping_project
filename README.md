@@ -2,12 +2,12 @@
 <p>HTML과 CSS, JavaScript를 사용해 만든 가상 '앨범 판매 웹사이트' 입니다.</p>
 
 <h2>:star: 실행화면</h2>
-<p>메인화면</p>
+<p>[메인화면]</p>
 
 <br /><br />
 
-<p>등록화면</p>
-<img src="https://github.com/user-attachments/assets/bd9e9537-9d57-49c1-842c-781e44147e52">
+<p>[등록화면]</p>
+<img src="https://github.com/user-attachments/assets/bd9e9537-9d57-49c1-842c-781e44147e52" width="600px">
 
 <br /><br />
 
