@@ -3,9 +3,12 @@
 
 <h2>:star: 실행화면</h2>
 <p>메인화면</p>
-<img src="https://github.com/user-attachments/assets/c3f3b1ec-ac33-474c-8e62-28afecc9f74d" width="600px">
-<img src="https://github.com/user-attachments/assets/40e774dc-297d-45f7-a392-dd3bdeb96ae2" width="600px">
-<img src="https://github.com/user-attachments/assets/b0284be6-5106-4d17-b338-df7c1b8fdd16" width="600px">
+
+<br /><br />
+
+<p>등록화면</p>
+<img src="https://github.com/user-attachments/assets/bd9e9537-9d57-49c1-842c-781e44147e52">
+
 <br /><br />
 
 <h2>📚 Tech Stack</h2>
