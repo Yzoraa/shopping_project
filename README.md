@@ -7,7 +7,7 @@
 <br /><br />
 
 <p>[등록화면]</p>
-<img src="https://github.com/user-attachments/assets/bd9e9537-9d57-49c1-842c-781e44147e52" width="600px">
+<img src="https://github.com/user-attachments/assets/78681fac-a19c-4c65-9446-281b60baee63" width="600px">
 
 <br /><br />
 
