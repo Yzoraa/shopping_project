@@ -1,5 +1,6 @@
 <h2>:question: 프로젝트 소개</h2>
 <p>HTML과 CSS, JavaScript를 사용해 만든 가상 '앨범 판매 웹사이트' 입니다.</p>
+<p>localstorge로 프론트간 데이터 공유 기능을 구현했습니다.</p>
 
 <h2>:star: 실행화면</h2>
 <p>[메인화면]</p>
