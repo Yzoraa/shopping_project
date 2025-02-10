@@ -8,6 +8,7 @@
 <br /><br />
 
 <p>[등록화면]</p>
+<p>- ID 중복 불가능, 입력칸 빈칸일 경우 저장버튼 비활성화</p>
 <img src="https://github.com/user-attachments/assets/78681fac-a19c-4c65-9446-281b60baee63">
 
 <br /><br />
