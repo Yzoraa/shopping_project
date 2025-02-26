@@ -5,7 +5,7 @@
 
 
 <h2>:star: 실행화면</h2>
-<h4>[ Main Page ]</h4>
+<h4>[Main Page]</h4>
 <p>- 이미지 슬라이드 무한 반복</p>
 <p>- 하트 이미지 클릭시 아이템 정보 로컬스토리지에 저장</p>
 <img src="https://github.com/user-attachments/assets/80019cc0-e818-47a6-97bf-b32bf0cf6226">
@@ -15,10 +15,10 @@
 <p>- 상세 페이지 : 장바구니 버튼 클릭시 아이템 정보 로컬스토리지에 저장 (쿼리스트링 by ID 기능으로 이동) </p>
 <p>- 장바구니 페이지 : 장바구니에 담은 아이템 출력</p>
 <p>- 좋아요 페이지 : 하트 이미지 클릭한 아이템 출력</p>
-<img src="">
+<img src="https://github.com/user-attachments/assets/2a9a3c55-8be1-4db9-9fe7-1bea910b0fad">
 <br /><br />
 
-<h4>[ Manager Page ]</h4>
+<h4>[Manager Page]</h4>
 <p><b>- 저장기능 : </b> 입력한 아이템 정보 로컬스토리지에 저장 (ID 중복 불가능, 이미지 랜덤 출력)</p>
 <img src="https://github.com/user-attachments/assets/3713b072-e463-4501-be7b-6116cc67dc37"><br />
 <p><b>- 수정기능 : </b> 등록된 내용 수정</p>
