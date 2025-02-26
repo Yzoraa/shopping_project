@@ -15,7 +15,7 @@
 <p>- 상세 페이지 : 장바구니 버튼 클릭시 아이템 정보 로컬스토리지에 저장 (쿼리스트링 by ID 기능으로 이동) </p>
 <p>- 장바구니 페이지 : 장바구니에 담은 아이템 출력</p>
 <p>- 좋아요 페이지 : 하트 이미지 클릭한 아이템 출력</p>
-<img src="https://github.com/user-attachments/assets/f2ed255a-d65f-425c-b2e2-8f4b79979996" width="700px">
+<img src="https://github.com/user-attachments/assets/f2ed255a-d65f-425c-b2e2-8f4b79979996">
 <br /><br />
 
 <h4>[Manager Page]</h4>
