@@ -7,7 +7,11 @@
 <h2>:star: 실행화면</h2>
 <h4>[ Main Page ]</h4>
 <p>- 이미지 슬라이드 무한 반복</p>
-<p>- 하트 이미지 클릭시 아이템 정보 로컬스토리지에 저장</p><br />
+<p>- 하트 이미지 클릭시 아이템 정보 로컬스토리지에 저장</p>
+<img src="https://github.com/user-attachments/assets/80019cc0-e818-47a6-97bf-b32bf0cf6226">
+<img src="https://github.com/user-attachments/assets/36f0adda-ffdb-43ae-a5ee-ffd3cf514038">
+<img src="https://github.com/user-attachments/assets/f79eac8f-ddf9-460c-8620-fedc89e9f8a5">
+<br />
 <p>- 상세 페이지 : 쿼리스트링 기능으로 이동, 장바구니 버튼 클릭시 아이템 정보 로컬스토리지에 저장 </p>
 <p>- 장바구니 페이지 : 장바구니에 담은 아이템 출력</p>
 <p>- 좋아요 페이지 : 하트 이미지 클릭한 아이템 출력</p>
@@ -17,8 +21,8 @@
 <h4>[ Manager Page ]</h4>
 <p><b>- 저장기능 : </b> 입력한 아이템 정보 로컬스토리지에 저장 (ID 중복 불가능, 이미지 랜덤 출력)</p>
 <img src="https://github.com/user-attachments/assets/3713b072-e463-4501-be7b-6116cc67dc37"><br />
-<p><b>- 저장기능 : </b> 등록된 내용 수정</p>
-<p><b>- 저장기능 : </b> 클릭한 버튼이 있는 행 삭제</p>
+<p><b>- 수정기능 : </b> 등록된 내용 수정</p>
+<p><b>- 삭제기능 : </b> 클릭한 버튼이 있는 행 삭제</p>
 <img src="https://github.com/user-attachments/assets/a277df56-6e25-456e-abb2-1acf1c31d0cc">
 <br /><br />
 
