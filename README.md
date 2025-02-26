@@ -8,7 +8,9 @@
 <h4>[ Main Page ]</h4>
 <p>- 이미지 슬라이드 무한 반복</p>
 <p>- 하트 이미지 클릭시 아이템 정보 로컬스토리지에 저장</p>
-
+<img src="https://github.com/user-attachments/assets/80019cc0-e818-47a6-97bf-b32bf0cf6226">
+<img src="https://github.com/user-attachments/assets/9d744509-8937-4932-9ed5-6804af8b35ec">
+<img src="https://github.com/user-attachments/assets/809973ea-50f2-49cb-8825-7778c3bd02fa">
 <br />
 <p>- 상세 페이지 : 장바구니 버튼 클릭시 아이템 정보 로컬스토리지에 저장 (쿼리스트링 by ID 기능으로 이동) </p>
 <p>- 장바구니 페이지 : 장바구니에 담은 아이템 출력</p>
